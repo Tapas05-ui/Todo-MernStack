@@ -7,10 +7,10 @@ const API = axios.create({
 });
 
 export const todoAPI = {
-  getAll: (params) => API.get("/todos", { params }),
-  getById: (id) => API.get(`/todos/${id}`),
-  create: (data) => API.post("/todos", data),
-  update: (id, data) => API.put(`/todos/${id}`, data),
-  toggle: (id) => API.patch(`/todos/${id}/toggle`),
-  delete: (id) => API.delete(`/todos/${id}`),
+  getAll: (params) => API.get("/api/todos", { params }),
+  getById: (id) => API.get(`/api/todos/${id}`),
+  create: (data) => API.post("/api/todos", data),
+  update: (id, data) => API.put(`/api/todos/${id}`, data),
+  toggle: (id) => API.patch(`/api/todos/${id}/toggle`),
+  delete: (id) => API.delete(`/api/todos/${id}`),
 };
