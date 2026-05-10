@@ -2,7 +2,7 @@ import axios from "axios";
 
 // This reads from your .env file (VITE_ prefix required for Vite)
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://todo-mernstack-bcon.onrender.com/api",
   headers: { "Content-Type": "application/json" },
 });
 
